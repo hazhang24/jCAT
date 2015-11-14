@@ -10,11 +10,11 @@ As an additional step, video support was added for the electronic version.
 
 The application was originally created in 2012 using Java and a J2EE layered architecture. The application connects to a database (originally MySQL) and performs object-relational mapping using Hibernate; business rules are created through Enterprise Java Beans (EJB); and finally, the view layer is done with PrimeFaces, a free and open source implementation of Java Server Faces (JSF). Everything is built using Ant.
 
-The generated web pages are hosted in a web server (originally Tomcat) and the EJBs and Data Access Objects (DAO) are hosted in an application server (originally JBoss 5.0.1).
+The generated web pages are hosted in a web server (originally [Tomcat 7](http://tomcat.apache.org/)) and the EJBs and Data Access Objects (DAO) are hosted in an application server (originally [JBoss 5.0.1](http://jbossas.jboss.org/downloads)).
 
 ### More info
 
-You can find a copy of my term paper [here](https://www.researchgate.net/publication/282914214_Desenvolvimento_de_um_sistema_de_aplicao_de_testes_informatizados_com_contedo_multimdia).
+You can find a copy of my term paper (in portuguese) [here](https://www.researchgate.net/publication/282914214_Desenvolvimento_de_um_sistema_de_aplicao_de_testes_informatizados_com_contedo_multimdia).
 
 ### Acknowledgements
 
