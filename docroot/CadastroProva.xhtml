@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Cadastro de Provas</title>
+</h:head>
+<h:body>
+	<ui:include src="Topo.xhtml" />
+	<h:form>
+		<p:growl showSummary="true" showDetail="true" autoUpdate="true" />
+		<p:panel header="Cadastro de Provas" id="log">
+			<h:panelGrid columns="2" id="matchGrid" style="width: 100%">
+				<f:facet name="header">Cadastro de Provas</f:facet>
+				<h:outputLabel for="txt_titulo" value="Título: " styleClass="label" />
+				<p:inputText id="txt_titulo"
+					value="#{cadastroProvaBean.prova.titulo}" required="true"
+					requiredMessage="Título da prova obrigatório" feedback="false" />
+				<h:outputLabel for="txt_descricao" value="Descrição: "
+					styleClass="label" />
+				<p:inputTextarea id="txt_descricao" feedback="false"
+					value="#{cadastroProvaBean.prova.descricao}" required="true"
+					requiredMessage="Descrição da prova obrigatória" />
+
+				<p:pickList id="pojoPickList" value="#{cadastroProvaBean.itens}"
+					var="item" itemValue="#{item}" itemLabel="#{item.enunciado}"
+					showSourceControls="true" showTargetControls="true"
+					converter="CadastroProvaItemVOConverter" showSourceFilter="true"
+					showTargetFilter="true" filterMatchMode="contains"
+					style="width:100%">
+
+					<f:facet name="sourceCaption">Itens Disponíveis</f:facet>
+					<f:facet name="targetCaption">Itens Selecionados</f:facet>
+
+					<p:column style="width:20%" headerText="Elaborador">
+						<f:facet name="header">
+							<h:outputText value="Elaborador" />
+						</f:facet>
+						#{item.elaborador}
+					</p:column>
+					<p:column style="width:60%" headerText="Enunciado">
+						<f:facet name="header">
+							<h:outputText value="Enunc." />
+						</f:facet>  
+	            		#{item.id} - #{item.enunciado}
+	        		</p:column>
+					<p:column style="width:20%" headerText="Última utilização">
+						<f:facet name="header">
+							<h:outputText value="Ult. Util." />
+						</f:facet>  
+	            		#{item.ultimaUtilizacao}
+	        		</p:column>
+
+				</p:pickList>
+				<f:facet name="footer">
+					<p:commandButton value="Cadastrar"
+						actionListener="#{cadastroProvaBean.efetuarCadastro}" />
+				</f:facet>
+			</h:panelGrid>
+		</p:panel>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Cadastro de Alunos</title>
+</h:head>
+<h:body>
+	<ui:include src="Topo.xhtml" />
+	<h:form>
+		<p:growl showSummary="true" showDetail="true" autoUpdate="true" />
+		<p:panel header="Cadastro de Alunos" id="log">
+			<h:panelGrid columns="2" id="matchGrid" style="width: 100px">
+				<h:outputLabel for="cbx_turmas" value="Turma: " />
+				<p:selectOneMenu filter="true" filterMatchMode="contains"
+					id="cbx_turmas" effect="fade"
+					value="#{cadastroAlunoBean.selectedTurma}">
+					<f:selectItems value="#{cadastroAlunoBean.turmas}" var="turma"
+						itemLabel="#{turma.descricao}" itemValue="#{turma}" />
+				</p:selectOneMenu>
+				<h:outputLabel for="txt_nome" value="Nome: " styleClass="label" />
+				<p:inputText id="txt_nome" value="#{cadastroAlunoBean.aluno.nome}"
+					required="true" requiredMessage="Nome obrigatório" feedback="false" />
+				<p:selectBooleanCheckbox id="cbx_ensinoInf"
+					value="#{cadastroAlunoBean.aluno.ensinoInfantil}" />
+				<h:outputLabel value="Fez ensino infantil" styleClass="label"
+					for="cbx_ensinoInf" />
+				<h:outputLabel for="ptCal" value="Nascimento" styleClass="label" />
+				<p:calendar locale="pt" showButtonPanel="true" navigator="true"
+					id="ptCal" />
+				<p>
+					<br />
+				</p>
+				<p:commandButton value="Cadastrar"
+					actionListener="#{cadastroAlunoBean.efetuarCadastro}" />
+			</h:panelGrid>
+		</p:panel>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Relatório do Aluno</title>
+</h:head>
+<h:body>
+	<center>
+		<p:pieChart id="sample" value="#{relatorioAlunoBean.pieModel}"
+			legendPosition="w" fill="false"
+			title="Seus resultados, #{relatorioAlunoBean.relatorio.aluno}!"
+			showDataLabels="true" style="width:400px;height:300px" />
+	</center>
+	<p>
+		<br />
+	</p>
+	<h:outputLabel value="#{relatorioAlunoBean.relatorio.clasValor}" />
+	<h:outputLabel value="#{relatorioAlunoBean.relatorio.clasDescricao}" />
+	<h:form>
+		<p:commandButton value="Fim"
+			actionListener="#{relatorioAlunoBean.finalizar}" />
+	</h:form>
+</h:body>
+</html>
