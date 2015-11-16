@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /**
- * Respons�vel por manipular uma cole��o de MsgException
+ * Responsável por manipular uma coleção de MsgException
  * 
  * @version 1.0
  */
@@ -19,7 +19,7 @@ public class MsgExceptionList implements Serializable
 	private Collection<MsgException> msgException = null;
 
 	/**
-	 * M�todo construtor para MsgExceptionList
+	 * Método construtor para MsgExceptionList
 	 */
 	public MsgExceptionList()
 	{
@@ -27,7 +27,7 @@ public class MsgExceptionList implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgExceptionList
+	 * Método construtor para MsgExceptionList
 	 */
 	public MsgExceptionList(MsgException msg)
 	{
@@ -36,10 +36,10 @@ public class MsgExceptionList implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para adicionar uma cole��o de MsgException
+	 * Método utilizado para adicionar uma coleção de MsgException
 	 * 
 	 * @param msg
-	 *            informar uma MsgException para ser adicionada a cole��o de
+	 *            informar uma MsgException para ser adicionada a coleção de
 	 *            MsgException
 	 */
 	public void addMsgException(MsgException msg)
@@ -48,7 +48,7 @@ public class MsgExceptionList implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para obter uma cole��o de MsgException
+	 * Método utilizado para obter uma coleção de MsgException
 	 * 
 	 * @return Collection
 	 */
@@ -58,10 +58,10 @@ public class MsgExceptionList implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para remover uma cole��o de MsgException
+	 * Método utilizado para remover uma coleção de MsgException
 	 * 
 	 * @param msg
-	 *            informar uma MsgException para ser removida da cole��o de
+	 *            informar uma MsgException para ser removida da coleção de
 	 *            MsgException
 	 */
 	public void removeMsgException(MsgException msg)
@@ -70,10 +70,10 @@ public class MsgExceptionList implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para informar uma cole��o de MsgException
+	 * Método utilizado para informar uma coleção de MsgException
 	 * 
 	 * @param msgException
-	 *            informar uma cole��o de MsgException a ser configurada
+	 *            informar uma coleção de MsgException a ser configurada
 	 */
 	public void setMsgException(Collection<MsgException> msgException)
 	{

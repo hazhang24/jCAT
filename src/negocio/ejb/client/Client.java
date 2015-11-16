@@ -50,58 +50,58 @@ public class Client
 				0,
 				1,
 				4,
-				"Neste n�vel, encontram-se alunos que est�o em um est�gio muito inicial em rela��o � aprendizagem da linguagem escrita. "
-						+ "Est�o come�ando a se apropriar das habilidades referentes ao dom�nio das regras que orientam "
-						+ "o uso do sistema alfab�tico para ler e escrever. Sabem, por exemplo:\nidentificar o valor sonoro das partes iniciais "
-						+ "e/ou finais de palavras (algumas letras ou s�labas), para �adivinhar� e �ler� o restante da palavra;"
-						+ "\nidentificar rela��o entre grafemas e fonemas (letra/som) com correspond�ncia sonora �nica ou com mais de uma correspond�ncia sonora;"
-						+ "\nreconhecer algumas letras do alfabeto e iniciar a distin��o das letras de desenhos e outros sinais gr�ficos;"
-						+ "\nler palavras formadas por s�labas simples (consoante monog�mica + vogal).");
+				"Neste nível, encontram-se alunos que estão em um estágio muito inicial em relação à aprendizagem da linguagem escrita. "
+						+ "Estão começando a se apropriar das habilidades referentes ao domínio das regras que orientam "
+						+ "o uso do sistema alfabético para ler e escrever. Sabem, por exemplo:\nidentificar o valor sonoro das partes iniciais "
+						+ "e/ou finais de palavras (algumas letras ou sílabas), para \"adivinhar\" e \"ler\" o restante da palavra;"
+						+ "\nidentificar relação entre grafemas e fonemas (letra/som) com correspondência sonora única ou com mais de uma correspondência sonora;"
+						+ "\nreconhecer algumas letras do alfabeto e iniciar a distinção das letras de desenhos e outros sinais gráficos;"
+						+ "\nler palavras formadas por sílabas simples (consoante monogâmica + vogal).");
 		CadastroClassificacaoVO cl2 = new CadastroClassificacaoVO(
 				0,
 				2,
 				9,
-				"Os alunos que se encontram neste n�vel, al�m de j� terem consolidado as habilidades do n�vel anterior, "
-						+ "referentes ao conhecimento e uso do sistema de escrita, j� associam adequadamente letras e sons. Embora ainda apresentem "
-						+ "algumas dificuldades na leitura de palavras com ortografia mais complexa, neste n�vel, demonstram ser capazes de ler palavras "
-						+ "com v�rios tipos de estrutura sil�bica. Eles demonstram habilidades de:\nler algumas palavras compostas por s�labas formadas "
+				"Os alunos que se encontram neste nível, além de já terem consolidado as habilidades do nível anterior, "
+						+ "referentes ao conhecimento e uso do sistema de escrita, já associam adequadamente letras e sons. Embora ainda apresentem "
+						+ "algumas dificuldades na leitura de palavras com ortografia mais complexa, neste nível, demonstram ser capazes de ler palavras "
+						+ "com vários tipos de estrutura silábica. Eles demonstram habilidades de:\nler algumas palavras compostas por sílabas formadas "
 						+ "por consoante/vogal/consoante ou por consoante/consoante/vogal;\nreconhecer letras escritas de diferentes formas;"
-						+ "\nidentificar o n�mero de s�labas de uma palavra formada por s�labas simples e com letras com um �nico som;"
-						+ "\nreconhecer a finalidade do texto com apoio das caracter�sticas gr�ficas;\nreconhecer o valor sonoro de uma s�laba;"
-						+ "\nreconhecer o assunto de g�neros textuais mais pr�prios do contexto escolar com base em suas caracter�sticas gr�ficas.");
+						+ "\nidentificar o número de sílabas de uma palavra formada por sílabas simples e com letras com um único som;"
+						+ "\nreconhecer a finalidade do texto com apoio das características gráficas;\nreconhecer o valor sonoro de uma sílaba;"
+						+ "\nreconhecer o assunto de gêneros textuais mais próprios do contexto escolar com base em suas características gráficas.");
 		CadastroClassificacaoVO cl3 = new CadastroClassificacaoVO(
 				0,
 				3,
 				15,
-				"Neste n�vel, os alunos demonstram que consolidaram a capacidade de ler palavras de diferentes tamanhos "
-						+ "e padr�es sil�bicos, conseguem ler frases com sintaxe simples (sujeito + verbo + objeto) e utilizam algumas estrat�gias "
-						+ "que permitem ler textos de curta extens�o. As capacidades reveladas neste n�vel s�o:\nler palavras mais complexas, "
-						+ "constitu�das por letras que representam mais de um som e por s�labas formadas por d�grafos, encontros consonantais ou "
-						+ "encontros voc�licos;\nler frases curtas;\nlocalizar informa��es expl�citas por meio da leitura silenciosa em uma frase ou "
-						+ "em textos de aproximadamente cinco linhas;\nreconhecer o assunto do texto com base na leitura de informa��es evidentes no "
-						+ "t�tulo;\nidentificar finalidade de g�neros (convite, an�ncio publicit�rio), apoiando-se ou n�o em suas caracter�sticas "
-						+ "gr�ficas como imagens e em seu modo de apresenta��o.");
+				"Neste nível, os alunos demonstram que consolidaram a capacidade de ler palavras de diferentes tamanhos "
+						+ "e padrões silábicos, conseguem ler frases com sintaxe simples (sujeito + verbo + objeto) e utilizam algumas estratágias "
+						+ "que permitem ler textos de curta extensão. As capacidades reveladas neste nível são:\nler palavras mais complexas, "
+						+ "constituídas por letras que representam mais de um som e por sílabas formadas por dígrafos, encontros consonantais ou "
+						+ "encontros vocálicos;\nler frases curtas;\nlocalizar informações explícitas por meio da leitura silenciosa em uma frase ou "
+						+ "em textos de aproximadamente cinco linhas;\nreconhecer o assunto do texto com base na leitura de informações evidentes no "
+						+ "título;\nidentificar finalidade de gêneros (convite, anúncio publicitário), apoiando-se ou não em suas características "
+						+ "gráficas como imagens e em seu modo de apresentação.");
 		CadastroClassificacaoVO cl4 = new CadastroClassificacaoVO(
 				0,
 				4,
 				18,
-				"Neste n�vel, os alunos leem textos simples e s�o capazes de interpret�-los, localizando informa��es, "
-						+ "realizando infer�ncias e reconhecendo o assunto ou a finalidade a partir da leitura aut�noma desses textos. S�o exemplos "
-						+ "de habilidades demonstradas pelos alunos deste n�vel:\nlocalizar informa��es expl�citas e evidentes a partir da leitura de "
-						+ "textos como bilhetes e convites, sem apoio das caracter�sticas gr�ficas;\ninferir informa��o em textos curtos;\nidentificar "
-						+ "finalidade de textos de g�neros diversos, como bilhetes, sum�rio, convite, cartazes;\nreconhecer o assunto de um texto sem apoio "
-						+ "das caracter�sticas gr�ficas do suporte;\nlocalizar informa��o expl�cita, em menor evid�ncia, em textos informativos ou "
+				"Neste nível, os alunos leem textos simples e são capazes de interpretá-los, localizando informações, "
+						+ "realizando inferências e reconhecendo o assunto ou a finalidade a partir da leitura autônoma desses textos. São exemplos "
+						+ "de habilidades demonstradas pelos alunos deste nível:\nlocalizar informações explícitas e evidentes a partir da leitura de "
+						+ "textos como bilhetes e convites, sem apoio das características gráficas;\ninferir informação em textos curtos;\nidentificar "
+						+ "finalidade de textos de gêneros diversos, como bilhetes, sumário, convite, cartazes;\nreconhecer o assunto de um texto sem apoio "
+						+ "das características gráficas do suporte;\nlocalizar informação explícita, em menor evidência, em textos informativos ou "
 						+ "narrativos um pouco mais longos.");
 		CadastroClassificacaoVO cl5 = new CadastroClassificacaoVO(
 				0,
 				5,
 				20,
-				"Neste n�vel, os alunos demonstram ter alcan�ado o dom�nio do sistema de escrita e a compreens�o do princ�pio "
-						+ "alfab�tico, apresentando um excelente desempenho, tendo em vista as habilidades que definem o aluno como alfabetizado e "
-						+ "considerando as que s�o desej�veis para o fim do segundo ano de escolariza��o. Demonstram compreender textos informativos "
-						+ "e narrativos de vocabul�rio complexo, estabelecendo rela��es entre as partes que o comp�em, inferindo o assunto principal "
-						+ "e localizando informa��es que n�o s�o evidentes. Assim, as crian�as que atingiram este n�vel j� avan�aram expressivamente "
-						+ "no processo de alfabetiza��o e letramento inicial.");
+				"Neste nível, os alunos demonstram ter alcançado o domínio do sistema de escrita e a compreensão do princípio "
+						+ "alfabético, apresentando um excelente desempenho, tendo em vista as habilidades que definem o aluno como alfabetizado e "
+						+ "considerando as que são desejáveis para o fim do segundo ano de escolarização. Demonstram compreender textos informativos "
+						+ "e narrativos de vocabulário complexo, estabelecendo relações entre as partes que o compõem, inferindo o assunto principal "
+						+ "e localizando informações que não são evidentes. Assim, as crianças que atingiram este nível já avançaram expressivamente "
+						+ "no processo de alfabetização e letramento inicial.");
 
 		request.set("classificacaoVO", cl1);
 		cad.cadastrarClassificacao(request);

@@ -3,7 +3,7 @@ package util.exception;
 import util.log.LoggerGenerator;
 
 /**
- * Respons�vel por criacao das Exce��es de Sistema
+ * Responsável por criacao das Exceções de Sistema
  * 
  * @version 1.0
  */

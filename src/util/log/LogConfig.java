@@ -53,7 +53,7 @@ public class LogConfig
 			if (input == null)
 			{
 				System.out.println("***** Arquivo de propriedades "
-						+ Util.LOG_FILE + " n�o encontrado! *****");
+						+ Util.LOG_FILE + " não encontrado! *****");
 			}
 			props.load(input);
 

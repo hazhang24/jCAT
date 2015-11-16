@@ -1,7 +1,7 @@
 package util.exception;
 
 /**
- * Respons�vel por lan�ar a exce��o LayerException
+ * Responsável por lançar a exceção LayerException
  * 
  * @version 1.0
  */
@@ -15,7 +15,7 @@ public abstract class LayerException extends Exception
 	private MsgExceptionList msgExceptionList;
 
 	/**
-	 * M�todo construtor para LayerException
+	 * Método construtor para LayerException
 	 */
 	public LayerException()
 	{
@@ -23,7 +23,7 @@ public abstract class LayerException extends Exception
 	}
 
 	/**
-	 * M�todo construtor para LayerException
+	 * Método construtor para LayerException
 	 */
 	public LayerException(MsgException msg)
 	{
@@ -32,7 +32,7 @@ public abstract class LayerException extends Exception
 	}
 
 	/**
-	 * M�todo construtor para LayerException
+	 * Método construtor para LayerException
 	 */
 	public LayerException(MsgExceptionList msgExceptionList)
 	{
@@ -41,7 +41,7 @@ public abstract class LayerException extends Exception
 	}
 
 	/**
-	 * M�todo utilizado para recuperar uma MsgExceptionList.
+	 * Método utilizado para recuperar uma MsgExceptionList.
 	 * 
 	 * @return MsgExceptionList
 	 * @see MsgExceptionList
@@ -52,7 +52,7 @@ public abstract class LayerException extends Exception
 	}
 
 	/**
-	 * M�todo utilizado para configurar uma MsgExceptionList.
+	 * Método utilizado para configurar uma MsgExceptionList.
 	 * 
 	 * @param list
 	 *            informa um arrayList de MsgExceptionList

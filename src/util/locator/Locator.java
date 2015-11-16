@@ -92,7 +92,7 @@ public class Locator
 		catch (NamingException _nex)
 		{
 			throw new ServiceLocatorException("O objeto nomeado[" + envName
-					+ "] n�o foi encontrado localmente para JNDI service: ["
+					+ "] não foi encontrado localmente para JNDI service: ["
 					+ _nex.getMessage() + "].", _nex);
 		}
 		finally
@@ -107,7 +107,7 @@ public class Locator
 			catch (NamingException _nex)
 			{
 				logger.warn(
-						"N�o foi poss�vel fechar o contexto: ["
+						"Não foi possível fechar o contexto: ["
 								+ _nex.getMessage() + "].", _nex);
 			}
 		}
@@ -146,7 +146,7 @@ public class Locator
 		catch (NamingException _nex)
 		{
 			throw new ServiceLocatorException("O objeto nomeado[" + envName
-					+ "] n�o foi encontrado remotamente para JNDI service["
+					+ "] não foi encontrado remotamente para JNDI service["
 					+ provider.getProperties() + "]: [" + _nex.getMessage()
 					+ "].", _nex);
 		}
@@ -162,7 +162,7 @@ public class Locator
 			catch (NamingException _nex)
 			{
 				logger.warn(
-						"N�o foi poss�vel fechar o contexto: ["
+						"Não foi possível fechar o contexto: ["
 								+ _nex.getMessage() + "].", _nex);
 			}
 		}

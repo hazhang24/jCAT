@@ -53,7 +53,7 @@ public class LoginBean
 						null,
 						new FacesMessage(FacesMessage.SEVERITY_WARN,
 								"Falha no login!",
-								"Este usu�rio j� est� logado!"));
+								"Este usuário já está logado!"));
 				return;
 			}
 
@@ -98,7 +98,7 @@ public class LoginBean
 			FacesContext.getCurrentInstance().addMessage(
 					null,
 					new FacesMessage(FacesMessage.SEVERITY_WARN,
-							"Falha no login!", "Usu�rio ou senha errados!"));
+							"Falha no login!", "Usuário ou senha errados!"));
 		}
 	}
 
@@ -123,7 +123,7 @@ public class LoginBean
 						null,
 						new FacesMessage(FacesMessage.SEVERITY_WARN,
 								"Falha no login!",
-								"Esta prova j� est� sendo realizada!"));
+								"Esta prova já está sendo realizada!"));
 				return;
 			}
 

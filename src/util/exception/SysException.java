@@ -1,7 +1,7 @@
 package util.exception;
 
 /**
- * Respons�vel por lan�ar a exce��o SysException
+ * Responsável por lançar a exceção SysException
  * 
  * @version 1.0
  */
@@ -14,7 +14,7 @@ public abstract class SysException extends LayerException
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * M�todo construtor para SysException
+	 * Método construtor para SysException
 	 */
 	public SysException()
 	{
@@ -22,7 +22,7 @@ public abstract class SysException extends LayerException
 	}
 
 	/**
-	 * M�todo construtor para SysException
+	 * Método construtor para SysException
 	 */
 	public SysException(MsgException msg)
 	{
@@ -30,7 +30,7 @@ public abstract class SysException extends LayerException
 	}
 
 	/**
-	 * M�todo construtor para SysException
+	 * Método construtor para SysException
 	 */
 	public SysException(MsgExceptionList list)
 	{

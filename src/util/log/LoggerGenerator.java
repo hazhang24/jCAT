@@ -70,14 +70,14 @@ public final class LoggerGenerator
 	}
 
 	/**
-	 * M�todo utilizado para formatar os campos do arquivo de log.
+	 * Método utilizado para formatar os campos do arquivo de log.
 	 * 
 	 * @param token
 	 *            informa campo a ser formatado
 	 * @param finalSize
 	 *            informa o tamanho que um determinado campo deve possuir. Caso
-	 *            o tamanho seja menor que o campo este ser� truncado. Caso
-	 *            contrario, este ser� preenchido com espa�o em branco.
+	 *            o tamanho seja menor que o campo este será truncado. Caso
+	 *            contrario, este será preenchido com espaço em branco.
 	 */
 	public static String format(String token, int finalSize)
 	{
@@ -149,10 +149,10 @@ public final class LoggerGenerator
 	}
 
 	/**
-	 * M�todo utilizado para registrar informa��es de DEBUG no log.
+	 * Método utilizado para registrar informações de DEBUG no log.
 	 * 
 	 * @param event
-	 *            informa o n�vel na camada da arquitetura
+	 *            informa o nível na camada da arquitetura
 	 * @param message
 	 *            informa a mensagem a ser logada
 	 */
@@ -168,14 +168,14 @@ public final class LoggerGenerator
 	}
 
 	/**
-	 * M�todo utilizado para registrar informa��es no log.
+	 * Método utilizado para registrar informações no log.
 	 * 
 	 * @param event
-	 *            informa o n�vel na camada da arquitetura
+	 *            informa o nível na camada da arquitetura
 	 * @param errorCode
-	 *            informa um c�digo de erro do sistema
+	 *            informa um código de erro do sistema
 	 * @param object
-	 *            informa uma exce��o lan�ada do objeto
+	 *            informa uma exceção lançada do objeto
 	 * @param message
 	 *            informa a mensagem a ser logada
 	 */
@@ -231,7 +231,7 @@ public final class LoggerGenerator
 	}
 
 	/**
-	 * Metodo para tratamento de excecoes em logs
+	 * Método para tratamento de exceções em logs
 	 */
 	public static void write(String event, String message, Throwable exception)
 	{

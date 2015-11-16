@@ -69,7 +69,7 @@ public abstract class GenericDAO<T>
 	 * 
 	 * @param obj
 	 *            Objeto a ser persistido
-	 * @return O objeto se bem sucedido, caso contr�rio null
+	 * @return O objeto se bem sucedido, caso contrário null
 	 */
 	public T insereRetorna(T obj)
 	{

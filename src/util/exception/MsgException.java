@@ -3,7 +3,7 @@ package util.exception;
 import java.io.Serializable;
 
 /**
- * Respons�vel por manipular uma MsgException
+ * Responsável por manipular uma MsgException
  * 
  * @version 1.0
  */
@@ -18,7 +18,7 @@ public class MsgException implements Serializable
 	private Object details = "";
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(Object details)
 	{
@@ -26,7 +26,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(Object[] params)
 	{
@@ -34,7 +34,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(Object[] params, Object details)
 	{
@@ -43,7 +43,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(String code)
 	{
@@ -51,7 +51,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(String code, Object details)
 	{
@@ -60,7 +60,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(String code, Object[] params)
 	{
@@ -69,7 +69,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo construtor para MsgException
+	 * Método construtor para MsgException
 	 */
 	public MsgException(String code, Object[] params, Object details)
 	{
@@ -79,7 +79,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para obter o c�digo de uma MsgException
+	 * Método utilizado para obter o código de uma MsgException
 	 * 
 	 * @return String
 	 */
@@ -89,7 +89,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para obter os detalhes de uma MsgException
+	 * Método utilizado para obter os detalhes de uma MsgException
 	 * 
 	 * @return Object
 	 */
@@ -99,7 +99,7 @@ public class MsgException implements Serializable
 	}
 
 	/**
-	 * M�todo utilizado para obter os par�metros de uma MsgException
+	 * Método utilizado para obter os parâmetros de uma MsgException
 	 * 
 	 * @return Object[]
 	 */

@@ -65,7 +65,7 @@ public class CadastroAplicacaoProvaBean implements Serializable
 				FacesContext.getCurrentInstance().addMessage(
 						null,
 						new FacesMessage("Falha...",
-								"Falha ao iniciar a aplica��o!"));
+								"Falha ao iniciar a aplicação!"));
 			}
 		}
 	}

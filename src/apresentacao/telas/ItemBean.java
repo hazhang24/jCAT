@@ -49,7 +49,7 @@ public class ItemBean implements Serializable
 
 			if (instancia.getAtual() < instancia.getItens().size())
 			{
-				item.setMsgBotao("Pr�xima");
+				item.setMsgBotao("Próxima");
 			}
 			else
 			{

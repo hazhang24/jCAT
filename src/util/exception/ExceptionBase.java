@@ -9,11 +9,11 @@ public class ExceptionBase extends Exception
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Gera TraceString associada � thread corrente.
+	 * Gera TraceString associada à thread corrente.
 	 * 
-	 * A Trace String � composta pela identifica��o da thread e o timestamp.
+	 * A Trace String é composta pela identificação da thread e o timestamp.
 	 * 
-	 * @return String com identifica��o do erro original.
+	 * @return String com identificação do erro original.
 	 */
 	private static String exceptionTraceCode()
 	{
@@ -25,13 +25,13 @@ public class ExceptionBase extends Exception
 	/**
 	 * Construtor
 	 * 
-	 * Assinatura de construtor que recebe uma exce��o derivada de ExceptionBase
-	 * e portanto j� � uma exce��o que encapsula a original e j� possui
-	 * TraceString, que � reaproveitada para que possa ser usada como elemento
+	 * Assinatura de construtor que recebe uma exceção derivada de ExceptionBase
+	 * e portanto já é uma exceção que encapsula a original e já possui
+	 * TraceString, que é reaproveitada para que possa ser usada como elemento
 	 * de trace do problema.
 	 * 
 	 * @param e
-	 *            exce��o derivada de ExceptionBase
+	 *            exceção derivada de ExceptionBase
 	 */
 	public ExceptionBase(ExceptionBase e)
 	{
@@ -42,13 +42,13 @@ public class ExceptionBase extends Exception
 	/**
 	 * Construtor
 	 * 
-	 * Assinatura de construtor que recebe uma exce��o derivada de ExceptionBase
-	 * e portanto j� � uma exce��o que encapsula a original e j� possui
-	 * TraceString, que � reaproveitada para que possa ser usada como elemento
+	 * Assinatura de construtor que recebe uma exceção derivada de ExceptionBase
+	 * e portanto já é uma exceção que encapsula a original e já possui
+	 * TraceString, que é reaproveitada para que possa ser usada como elemento
 	 * de trace do problema.
 	 * 
 	 * @param e
-	 *            exce��o derivada de ExceptionBase
+	 *            exceção derivada de ExceptionBase
 	 */
 	public ExceptionBase(String str)
 	{
@@ -59,13 +59,13 @@ public class ExceptionBase extends Exception
 	/**
 	 * Construtor
 	 * 
-	 * Assinatura de construtor que recebe uma exce��o derivada de ExceptionBase
-	 * e portanto j� � uma exce��o que encapsula a original e j� possui
-	 * TraceString, que � reaproveitada para que possa ser usada como elemento
+	 * Assinatura de construtor que recebe uma exceção derivada de ExceptionBase
+	 * e portanto já é uma exceção que encapsula a original e já possui
+	 * TraceString, que é reaproveitada para que possa ser usada como elemento
 	 * de trace do problema.
 	 * 
 	 * @param e
-	 *            exce��o derivada de ExceptionBase
+	 *            exceção derivada de ExceptionBase
 	 */
 	public ExceptionBase(String str, ExceptionBase e)
 	{
@@ -76,13 +76,13 @@ public class ExceptionBase extends Exception
 	/**
 	 * Construtor
 	 * 
-	 * Assinatura de construtor que recebe uma exce��o derivada de ExceptionBase
-	 * e portanto j� � uma exce��o que encapsula a original e j� possui
-	 * TraceString, que � reaproveitada para que possa ser usada como elemento
+	 * Assinatura de construtor que recebe uma exceção derivada de ExceptionBase
+	 * e portanto já é uma exceção que encapsula a original e já possui
+	 * TraceString, que é reaproveitada para que possa ser usada como elemento
 	 * de trace do problema.
 	 * 
 	 * @param e
-	 *            exce��o derivada de ExceptionBase
+	 *            exceção derivada de ExceptionBase
 	 */
 	public ExceptionBase(String str, Throwable e)
 	{
@@ -93,10 +93,10 @@ public class ExceptionBase extends Exception
 	/**
 	 * Construtor
 	 * 
-	 * Assinatura de construtor que recebe a exce��o original, n�o derivada de
+	 * Assinatura de construtor que recebe a exceção original, não derivada de
 	 * ExceptionBase.
 	 * 
-	 * Este construtor dever� ser chamada para a exception original e portanto
+	 * Este construtor deverá ser chamada para a exception original e portanto
 	 * gera a TraceString.
 	 * 
 	 * @param e
@@ -121,7 +121,7 @@ public class ExceptionBase extends Exception
 	}
 
 	/**
-	 * Exibe a TraceString associada � exce��o.
+	 * Exibe a TraceString associada à exceção.
 	 * 
 	 * @return String
 	 */

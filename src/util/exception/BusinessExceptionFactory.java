@@ -5,7 +5,7 @@ import java.util.Iterator;
 import util.log.LoggerGenerator;
 
 /**
- * Respons�vel por criar as Exce��es de Neg�cios
+ * Responsável por criar as exceções de negócios
  * 
  * @version 1.0
  */
@@ -13,7 +13,7 @@ public class BusinessExceptionFactory
 {
 
 	/**
-	 * M�todo utilizado para obter uma exce��o Business Exception
+	 * Método utilizado para obter uma exceção Business Exception
 	 * 
 	 * @param MsgExceptionList
 	 *            informar uma lista do tipo MsgExceptionList
