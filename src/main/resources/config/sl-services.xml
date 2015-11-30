@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<services>
+	<service>
+		<name>CadastroBean/remote</name>
+		<jndi-name>CadastroBean/remote</jndi-name>
+		<cacheable>true</cacheable>
+		<providers>
+			<provider>
+				<name>JBoss Principal</name>
+			</provider>
+		</providers>
+	</service>
+	<service>
+		<name>PesquisaBean/remote</name>
+		<jndi-name>PesquisaBean/remote</jndi-name>
+		<cacheable>true</cacheable>
+		<providers>
+			<provider>
+				<name>JBoss Principal</name>
+			</provider>
+		</providers>
+	</service>
+	<service>
+		<name>LoginBean/remote</name>
+		<jndi-name>LoginBean/remote</jndi-name>
+		<cacheable>true</cacheable>
+		<providers>
+			<provider>
+				<name>JBoss Principal</name>
+			</provider>
+		</providers>
+	</service>
+</services>

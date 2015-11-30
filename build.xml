@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Brodus" default="_packaging_generation_">
 
-	<property name="jboss.home" value="/home/user/Desktop/dev/jboss-5.0.1.GA" />
-	<property name="tomcat.web" value="/home/user/Desktop/dev/apache-tomcat-7.0.37" />
+	<property name="jboss.home" value="/home/douglas/dev/jboss-5.0.1.GA" />
+	<property name="tomcat.web" value="/home/douglas/dev/apache-tomcat-8.0.28" />
 	<property name="jboss.server.config" value="default" />
 	<property name="build.artifact.ejb" value="BrodusEJB.jar" />
 	<property name="build.artifact.war" value="BrodusWeb.war" />

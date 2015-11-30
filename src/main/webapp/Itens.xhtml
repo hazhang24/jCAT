@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Relatórios</title>
+</h:head>
+<h:body>
+	<ui:include src="Topo.xhtml" />
+	<h:form prependId="false">
+		<p:dataTable id="dataTable" var="item" rows="32"
+			value="#{itensBean.itens}" rowsPerPageTemplate="32,64,96"
+			paginator="true"
+			paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+			<f:facet name="header"> 
+            	Banco de Itens 
+        	</f:facet>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="ID" />
+				</f:facet>
+				<h:outputText value="#{item.id}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Descritor" />
+				</f:facet>
+				<h:outputText value="#{item.Descritor}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="A" />
+				</f:facet>
+				<h:outputText value="#{item.altA}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="B" />
+				</f:facet>
+				<h:outputText value="#{item.altB}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="C" />
+				</f:facet>
+				<h:outputText value="#{item.altC}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="D" />
+				</f:facet>
+				<h:outputText value="#{item.altD}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Correta" />
+				</f:facet>
+				<h:outputText value="#{item.correta}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Ult. Utilização" />
+				</f:facet>
+				<h:outputText value="#{item.ultimaUtilizacao}" />
+			</p:column>
+		</p:dataTable>
+	</h:form>
+</h:body>
+</html>

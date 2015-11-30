@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Login</title>
+</h:head>
+<h:body>
+	<p:graphicImage value="/images/logo.jpg" />
+	<p:tabView id="tabView">
+		<p:tab id="tab1" title="Login">
+			<h:form>
+				<h:panelGrid columns="2" id="gridLogin" style="text-align: center">
+					<h:outputLabel value="E-mail: " for="txt_email" />
+					<p:inputText id="txt_email" required="true"
+						requiredMessage="E-mail obrigatório"
+						value="#{loginBean.login.email}" />
+
+					<h:outputLabel value="Senha: " for="txt_senha" />
+					<p:password id="txt_senha" required="true"
+						requiredMessage="Senha obrigatória"
+						value="#{loginBean.login.senha}" />
+					<f:facet name="footer">
+						<p:commandButton id="btnLogar" value="Log In" align="center"
+							action="#{loginBean.efetuarLogin}" />
+					</f:facet>
+				</h:panelGrid>
+			</h:form>
+		</p:tab>
+
+		<p:tab id="tab2" title="Aluno">
+			<h:form>
+				<h:panelGrid columns="2" id="gridAluno" style="text-align: center">
+
+					<h:outputLabel value="Código da Aplicação: " for="txt_codigo" />
+					<p:inputText id="txt_codigo" required="true"
+						requiredMessage="Código da aplicação obrigatório"
+						value="#{loginBean.login.id}" />
+
+					<p:commandButton id="btnAluno" value="Log In" align="center"
+						actionListener="#{loginBean.efetuarLoginAluno}" />
+				</h:panelGrid>
+			</h:form>
+		</p:tab>
+
+	</p:tabView>
+	<p:messages id="messages" showDetail="true" autoUpdate="true"
+		closable="true" />
+</h:body>
+</html>

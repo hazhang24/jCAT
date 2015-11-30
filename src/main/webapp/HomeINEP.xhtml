@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>INEP - Home</title>
+</h:head>
+<h:body><ui:include src="Topo.xhtml" />
+	<p:stack icon="/images/shared/stack.png">
+		<p:menuitem value="Relatórios" icon="/images/shared/relatorio.png"
+			url="Relatorios.xhtml" />
+		<p:menuitem value="Nova Escola" icon="/images/inepHome/escola.png"
+			url="CadastroEscola.xhtml" />
+		<p:menuitem value="Nova Secretaria"
+			icon="/images/inepHome/secretaria.png" url="CadastroSecretaria.xhtml" />
+		<p:menuitem value="Novo Elaborador"
+			icon="/images/inepHome/elaborador.png" url="CadastroElaborador.xhtml" />
+	</p:stack>
+</h:body>
+</html>

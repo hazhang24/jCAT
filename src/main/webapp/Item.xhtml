@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>Brodus</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:selectOneRadio id="customRadio" value="#{itemBean.item.escolha}"
+			layout="custom">
+			<f:selectItem itemLabel="Option 0" itemValue="A" />
+			<f:selectItem itemLabel="Option 1" itemValue="B" />
+			<f:selectItem itemLabel="Option 2" itemValue="C" />
+			<f:selectItem itemLabel="Option 3" itemValue="D" />
+		</p:selectOneRadio>
+		<p:panelGrid style="margin-top:20px; width:100%" id="pan">
+			<f:facet name="header">
+				<p:row>
+					<p:column colspan="#{itemBean.item.imgEnunciado != null ? 4 : 3}">Pergunta #{itemBean.instancia.atual}</p:column>
+				</p:row>
+			</f:facet>
+
+			<p:row rendered="#{itemBean.item.narracao != null}">
+				<p:column colspan="#{itemBean.item.imgEnunciado != null ? 4 : 3}">
+					<p:media value="#{itemBean.item.narracao}" player="windows"
+						height="35" width="800" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="width:5%">
+					<p:radioButton id="altA" for="customRadio" itemIndex="0" />
+				</p:column>
+				<p:column style="font-weight: bold;">
+					<h:outputLabel for="altA" value="#{itemBean.item.altA}" />
+				</p:column>
+				<p:column>
+					<p:graphicImage value="#{itemBean.item.imgA}" />
+				</p:column>
+				<p:column rowspan="4"
+					rendered="#{itemBean.item.imgEnunciado != null}">
+					<p:graphicImage value="#{itemBean.item.imgEnunciado}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="width:5%">
+					<p:radioButton id="altB" for="customRadio" itemIndex="1" />
+				</p:column>
+				<p:column style="font-weight: bold;">
+					<h:outputLabel for="altB" value="#{itemBean.item.altB}" />
+				</p:column>
+				<p:column>
+					<p:graphicImage value="#{itemBean.item.imgB}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="width:5%">
+					<p:radioButton id="altC" for="customRadio" itemIndex="2" />
+				</p:column>
+				<p:column style="font-weight: bold;">
+					<h:outputLabel for="altC" value="#{itemBean.item.altC}" />
+				</p:column>
+				<p:column>
+					<p:graphicImage value="#{itemBean.item.imgC}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="width:5%">
+					<p:radioButton id="altD" for="customRadio" itemIndex="3" />
+				</p:column>
+				<p:column style="font-weight: bold;">
+					<h:outputLabel for="altD" value="#{itemBean.item.altD}" />
+				</p:column>
+				<p:column>
+					<p:graphicImage value="#{itemBean.item.imgD}" />
+				</p:column>
+			</p:row>
+
+			<f:facet name="footer">
+				<p:row>
+					<p:column colspan="#{itemBean.item.imgEnunciado != null ? 4 : 3}">
+						<p:commandButton value="#{itemBean.item.msgBotao}"
+							actionListener="#{itemBean.proximo}" update="pan" />
+					</p:column>
+				</p:row>
+			</f:facet>
+		</p:panelGrid>
+	</h:form>
+</h:body>
+</html>
