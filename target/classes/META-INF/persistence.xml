@@ -23,26 +23,25 @@
    <persistence-unit name="primary">
       <!-- If you are running in a production environment, add a managed 
          data source, this example data source is just for development and testing! -->
-      <!-- The datasource is deployed as WEB-INF/Brodus-ds.xml, you
+      <!-- The datasource is deployed as WEB-INF/jCAT-ds.xml, you
          can find it in the source at src/main/webapp/WEB-INF/Brodus-ds.xml -->
-      <jta-data-source>java:jboss/datasources/BrodusDS</jta-data-source>
-<!--     <jta-data-source>java:/BrodusDS</jta-data-source> -->
-    <class>com.douglasrizzo.negocio.entity.Aluno</class>
-    <class>com.douglasrizzo.negocio.entity.Aplicacao</class>
-    <class>com.douglasrizzo.negocio.entity.Aplicador</class>
-    <class>com.douglasrizzo.negocio.entity.Classificacao</class>
-    <class>com.douglasrizzo.negocio.entity.Elaborador</class>
-    <class>com.douglasrizzo.negocio.entity.Entidade</class>
-    <class>com.douglasrizzo.negocio.entity.Escola</class>
-    <class>com.douglasrizzo.negocio.entity.Inep</class>
-    <class>com.douglasrizzo.negocio.entity.Instancia</class>
-    <class>com.douglasrizzo.negocio.entity.Item</class>
-    <class>com.douglasrizzo.negocio.entity.ItemRespondido</class>
-    <class>com.douglasrizzo.negocio.entity.Prova</class>
-    <class>com.douglasrizzo.negocio.entity.Secretaria</class>
-    <class>com.douglasrizzo.negocio.entity.TipoUsuario</class>
-    <class>com.douglasrizzo.negocio.entity.Turma</class>
-    <class>com.douglasrizzo.negocio.entity.Usuario</class>
+      <jta-data-source>java:jboss/datasources/jCATDS</jta-data-source>
+    <class>com.douglasrizzo.business.entity.Aluno</class>
+    <class>com.douglasrizzo.business.entity.Aplicacao</class>
+    <class>com.douglasrizzo.business.entity.Aplicador</class>
+    <class>com.douglasrizzo.business.entity.Classificacao</class>
+    <class>com.douglasrizzo.business.entity.Elaborador</class>
+    <class>com.douglasrizzo.business.entity.Entidade</class>
+    <class>com.douglasrizzo.business.entity.Escola</class>
+    <class>com.douglasrizzo.business.entity.Inep</class>
+    <class>com.douglasrizzo.business.entity.Instancia</class>
+    <class>com.douglasrizzo.business.entity.Item</class>
+    <class>com.douglasrizzo.business.entity.ItemRespondido</class>
+    <class>com.douglasrizzo.business.entity.Prova</class>
+    <class>com.douglasrizzo.business.entity.Secretaria</class>
+    <class>com.douglasrizzo.business.entity.TipoUsuario</class>
+    <class>com.douglasrizzo.business.entity.Turma</class>
+    <class>com.douglasrizzo.business.entity.Usuario</class>
       <properties>
          <!-- Properties for Hibernate -->
          <property name="hibernate.hbm2ddl.auto" value="create-drop" />

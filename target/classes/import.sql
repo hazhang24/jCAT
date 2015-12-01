@@ -17,7 +17,7 @@
 
 -- You can use this file to load seed data into the database using SQL statements
 -- preenchimento totalitário
-INSERT INTO `brodus`.`Classificacao`
+INSERT INTO `jcat`.`Classificacao`
 (`id`,
 `acertos`,
 `descricao`,
@@ -29,7 +29,7 @@ VALUES
 "Neste nível, encontram-se alunos que estão em um estágio muito inicial em relação à aprendizagem da linguagem escrita. Estão começando a se apropriar das habilidades referentes ao domínio das regras que orientam o uso do sistema alfabético para ler e escrever.",
 1
 );
-INSERT INTO `brodus`.`Classificacao`
+INSERT INTO `jcat`.`Classificacao`
 (`id`,
 `acertos`,
 `descricao`,
@@ -41,7 +41,7 @@ VALUES
 "Os alunos que se encontram neste nível, além de já terem consolidado as habilidades do nível anterior, referentes ao conhecimento e uso do sistema de escrita, já associam adequadamente letras e sons. Embora ainda apresentem algumas dificuldades na leitura de palavras com ortografia mais complexa, neste nível, demonstram ser capazes de ler palavras com vários tipos de estrutura silábica.",
 2
 );
-INSERT INTO `brodus`.`Classificacao`
+INSERT INTO `jcat`.`Classificacao`
 (`id`,
 `acertos`,
 `descricao`,
@@ -53,7 +53,7 @@ VALUES
 "Neste nível, os alunos demonstram que consolidaram a capacidade de ler palavras de diferentes tamanhos e padrões silábicos, conseguem ler frases com sintaxe simples (sujeito + verbo + objeto) e utilizam algumas estratégias que permitem ler textos de curta extensão.",
 3
 );
-INSERT INTO `brodus`.`Classificacao`
+INSERT INTO `jcat`.`Classificacao`
 (`id`,
 `acertos`,
 `descricao`,
@@ -65,7 +65,7 @@ VALUES
 "Neste nível, os alunos leem textos simples e são capazes de interpretá-los, localizando informações, realizando inferências e reconhecendo o assunto ou a finalidade a partir da leitura autônoma desses textos.",
 4
 );
-INSERT INTO `brodus`.`Classificacao`
+INSERT INTO `jcat`.`Classificacao`
 (`id`,
 `acertos`,
 `descricao`,
@@ -79,7 +79,7 @@ Demonstram compreender textos informativos e narrativos de vocabulário complexo
 Assim, as crianças que atingiram este nível já avançaram expressivamente no processo de alfabetização e letramento inicial.",
 5
 );
-INSERT INTO `brodus`.`TipoUsuario`
+INSERT INTO `jcat`.`TipoUsuario`
 (`id`,
 `descricao`)
 VALUES
@@ -87,7 +87,7 @@ VALUES
 1,
 "Aplicador"
 );
-INSERT INTO `brodus`.`TipoUsuario`
+INSERT INTO `jcat`.`TipoUsuario`
 (`id`,
 `descricao`)
 VALUES
@@ -95,7 +95,7 @@ VALUES
 2,
 "Elaborador"
 );
-INSERT INTO `brodus`.`TipoUsuario`
+INSERT INTO `jcat`.`TipoUsuario`
 (`id`,
 `descricao`)
 VALUES
@@ -103,7 +103,7 @@ VALUES
 3,
 "Secretaria"
 );
-INSERT INTO `brodus`.`TipoUsuario`
+INSERT INTO `jcat`.`TipoUsuario`
 (`id`,
 `descricao`)
 VALUES
@@ -111,7 +111,7 @@ VALUES
 4,
 "INEP"
 );
-INSERT INTO `brodus`.`Usuario`
+INSERT INTO `jcat`.`Usuario`
 (`id`,
 `email`,
 `nome`,
@@ -127,7 +127,7 @@ VALUES
 "da Silva",
 1
 );
-INSERT INTO `brodus`.`Usuario`
+INSERT INTO `jcat`.`Usuario`
 (`id`,
 `email`,
 `nome`,
@@ -143,7 +143,7 @@ VALUES
 "de Souza",
 2
 );
-INSERT INTO `brodus`.`Usuario`
+INSERT INTO `jcat`.`Usuario`
 (`id`,
 `email`,
 `nome`,
@@ -159,7 +159,7 @@ VALUES
 "de Carvalho",
 3
 );
-INSERT INTO `brodus`.`Usuario`
+INSERT INTO `jcat`.`Usuario`
 (`id`,
 `email`,
 `nome`,
@@ -175,13 +175,13 @@ VALUES
 "Schoppenhauer",
 4
 );
-INSERT INTO `brodus`.`Elaborador`
+INSERT INTO `jcat`.`Elaborador`
 (`id`)
 VALUES
 (
 2
 );
-INSERT INTO `brodus`.`Inep`
+INSERT INTO `jcat`.`Inep`
 (`bogus`,
 `id`)
 VALUES
@@ -189,7 +189,7 @@ VALUES
 0,
 3
 );
-INSERT INTO `brodus`.`Escola`
+INSERT INTO `jcat`.`Escola`
 (`id`,
 `codigo`,
 `nome`)
@@ -199,7 +199,7 @@ VALUES
 6189160,
 "Escola Primária X"
 );
-INSERT INTO `brodus`.`Secretaria`
+INSERT INTO `jcat`.`Secretaria`
 (`id`,
 `escola_id`)
 VALUES
@@ -207,13 +207,13 @@ VALUES
 4,
 1
 );
-INSERT INTO `brodus`.`Aplicador`
+INSERT INTO `jcat`.`Aplicador`
 (`id`)
 VALUES
 (
 1
 );
-INSERT INTO `brodus`.`Turma`
+INSERT INTO `jcat`.`Turma`
 (`id`,
 `nome`,
 `aplicador_id`,
@@ -225,11 +225,11 @@ VALUES
 1,
 1
 );
-UPDATE `brodus`.`Aplicador`
+UPDATE `jcat`.`Aplicador`
 SET
 `turma_id` = 1
 WHERE `id` = 1;
-INSERT INTO `brodus`.`Aluno`
+INSERT INTO `jcat`.`Aluno`
 (`id`,
 `ensinoInfantil`,
 `nascimento`,
@@ -243,7 +243,7 @@ False,
 "Douglas",
 1
 );
-INSERT INTO `brodus`.`Item`
+INSERT INTO `jcat`.`Item`
 (`id`,
 `altA`,
 `altB`,
@@ -277,7 +277,7 @@ null,
 null,
 2
 );
-INSERT INTO `brodus`.`Item`
+INSERT INTO `jcat`.`Item`
 (`id`,
 `altA`,
 `altB`,

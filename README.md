@@ -1,37 +1,41 @@
-Brodus: Assortment of technologies including Arquillian
-========================
-Author: Pete Muir
-Level: Intermediate
-Technologies: CDI, JSF, JPA, EJB, JPA, JAX-RS, BV
-Summary: An example that incorporates multiple technologies
-Target Project: WildFly
-Source: <https://github.com/wildfly/quickstart/>
+# jCAT - Electronic educational testing platform
 
-What is it?
------------
+jCAT (formerly Brodus) is a web application whose purpose is to apply an electronic version of [Provinha Brasil](http://provinhabrasil.inep.gov.br/), a nation-wide educational evaluation for Brazilian students in the second year of basic school. In its current form, items are created by an specialist and stored in an item bank. This specialist then selects one or more items and creates a *test*. After that, students can take this test while proctored by a teacher or any other test administrator.
 
-This is your project! It is a sample, deployable Maven 3 project to help you get your foot in the door developing with Java EE 7 on JBoss WildFly.
+One of the prerequisites of *Provinha Brasil* is that item text and alternatives must be read to students by the test administrator. In order to do that electronically, jCAT allows an audio file to be uploaded by the item creator and played by the student during the test. Also, just like the original test, in the electronic version items and their alternatives may or may not be accompanied by images.
 
-This project is setup to allow you to create a compliant Java EE 7 application using JSF 2.2, CDI 1.1, EJB 3.3, JPA 2.1 and Bean Validation 1.1. It includes a persistence unit and some sample persistence and transaction code to introduce you to database access in enterprise Java.
+As an additional step, video support was added for the electronic version.
 
-There is a tutorial for this quickstart in the [Getting Started Developing Applications Guide](https://github.com/wildfly/quickstart/guide/Brodus/).
+## Architecture
 
-System requirements
--------------------
+The application was originally created in 2012 using Java and the J2EE layered architecture. The application connects to a database (originally MySQL) and performs object-relational mapping using Hibernate; business rules are created through Enterprise Java Beans (EJB); and finally, the view layer is done with PrimeFaces, a free and open source implementation of Java Server Faces (JSF). Everything is built using Ant.
+
+The generated web pages are hosted in a web server (originally [Tomcat 7](http://tomcat.apache.org/)) and the EJBs and Data Access Objects (DAO) are hosted in an application server (originally [JBoss 5.0.1](http://jbossas.jboss.org/downloads)).
+
+### More info
+
+You can find a copy of my term paper (in portuguese) [here](https://www.researchgate.net/publication/282914214_Desenvolvimento_de_um_sistema_de_aplicao_de_testes_informatizados_com_contedo_multimdia).
+
+### Acknowledgements
+
+This work was my term project for graduation. I did alongside my friend [Bruno de Jesus Destro](https://br.linkedin.com/in/brunodestro), having prof. Fabio Cabrini as a supervisor and profs. Marcos Roberto Macedo and Ocimar Munhoz Alavarse as examining board members.
+
+# Instructions to build and run
+
+As of 2015, the project has been built on top of a quickstart example from JBoss. The sections below are the instructions from the quickstart.
+
+## System requirements
 
 All you need to build this project is Java 7.0 (Java SDK 1.7) or better, Maven 3.1 or better.
 
 The application this project produces is designed to be run on JBoss WildFly.
-
  
-Configure Maven
----------------
+## Configure Maven
 
 If you have not yet done so, you must [Configure Maven](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/CONFIGURE_MAVEN.md) before testing the quickstarts.
 
 
-Start JBoss WildFly with the Web Profile
--------------------------
+## Start JBoss WildFly with the Web Profile
 
 1. Open a command line and navigate to the root of the JBoss server directory.
 2. The following shows the command line to start the server with the web profile:
@@ -40,8 +44,7 @@ Start JBoss WildFly with the Web Profile
         For Windows: JBOSS_HOME\bin\standalone.bat
 
  
-Build and Deploy the Quickstart
--------------------------
+## Build and Deploy the Quickstart
 
 _NOTE: The following build command assumes you have configured your Maven user settings. If you have not, you must include Maven setting arguments on the command line. See [Build and Deploy the Quickstarts](https://github.com/jboss-developer/jboss-eap-quickstarts#build-and-deploy-the-quickstarts) for complete instructions and additional options._
 
@@ -51,17 +54,15 @@ _NOTE: The following build command assumes you have configured your Maven user s
 
         mvn clean package wildfly:deploy
 
-4. This will deploy `target/Brodus.war` to the running instance of the server.
+4. This will deploy `target/jCAT.war` to the running instance of the server.
  
 
-Access the application 
----------------------
+## Access the application
 
-The application will be running at the following URL: <http://localhost:8080/Brodus/>.
+The application will be running at the following URL: <http://localhost:8080/jCAT/>.
 
 
-Undeploy the Archive
---------------------
+## Undeploy the Archive
 
 1. Make sure you have started the JBoss Server as described above.
 2. Open a command line and navigate to the root directory of this quickstart.
@@ -69,28 +70,12 @@ Undeploy the Archive
 
         mvn wildfly:undeploy
 
+## Run the Quickstart in JBoss Developer Studio or Eclipse
 
-Run the Arquillian Tests 
--------------------------
-
-This quickstart provides Arquillian tests. By default, these tests are configured to be skipped as Arquillian tests require the use of a container. 
-
-_NOTE: The following commands assume you have configured your Maven user settings. If you have not, you must include Maven setting arguments on the command line. See [Run the Arquillian Tests](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/RUN_ARQUILLIAN_TESTS.md) for complete instructions and additional options._
-
-1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
-3. Type the following command to run the test goal with the following profile activated:
-
-        mvn clean test -Parq-wildfly-remote
-
-
-Run the Quickstart in JBoss Developer Studio or Eclipse
--------------------------------------
 You can also start the server and deploy the quickstarts from Eclipse using JBoss tools. For more information, see [Use JBoss Developer Studio or Eclipse to Run the Quickstarts](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/USE_JBDS.md) 
 
 
-Debug the Application
-------------------------------------
+## Debug the Application
 
 If you want to debug the source code or look at the Javadocs of any library in the project, run either of the following commands to pull them into your local repository. The IDE should then detect them.
 

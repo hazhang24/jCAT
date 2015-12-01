@@ -23,10 +23,9 @@
    <persistence-unit name="primary">
       <!-- If you are running in a production environment, add a managed 
          data source, this example data source is just for development and testing! -->
-      <!-- The datasource is deployed as WEB-INF/Brodus-ds.xml, you
+      <!-- The datasource is deployed as WEB-INF/jCAT-ds.xml, you
          can find it in the source at src/main/webapp/WEB-INF/Brodus-ds.xml -->
-      <jta-data-source>java:jboss/datasources/BrodusDS</jta-data-source>
-<!--     <jta-data-source>java:/BrodusDS</jta-data-source> -->
+      <jta-data-source>java:jboss/datasources/jCATDS</jta-data-source>
     <class>com.douglasrizzo.business.entity.Aluno</class>
     <class>com.douglasrizzo.business.entity.Aplicacao</class>
     <class>com.douglasrizzo.business.entity.Aplicador</class>
