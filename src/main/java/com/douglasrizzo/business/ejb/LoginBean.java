@@ -27,7 +27,7 @@ import com.douglasrizzo.util.exception.LayerException;
 public @Stateful
 class LoginBean implements LoginRemote, LoginLocal
 {
-	@PersistenceContext(unitName = "Brodus")
+	@PersistenceContext(unitName = "jCAT")
 	EntityManager em;
 
 	@Override

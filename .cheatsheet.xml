@@ -15,7 +15,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<cheatsheet title="CDI + JSF + EJB + JTA + Bean Validation + JAX-RS + Arquillian: Brodus quickstart">
+<cheatsheet title="CDI + JSF + EJB + JTA + Bean Validation + JAX-RS + Arquillian: jCAT quickstart">
   <intro>
     <description>
 This quickstart shows off all the new features of Java EE 7, and makes a great starting point for your project.
@@ -31,9 +31,9 @@ JAX-RS is an update specification for Java EE 7. It allows application developer
 </intro>
   <item
         skip="false"
-        title="The Brodus example in depth">
+        title="The jCAT example in depth">
      <description>
-       The Brodus application shows off a number of Java EE technologies such as CDI, JSF, EJB, JTA, JAX-RS and Arquillian. 
+       The jCAT application shows off a number of Java EE technologies such as CDI, JSF, EJB, JTA, JAX-RS and Arquillian. 
        It does this by providing a member registration database, available via JSF and JAX-RS.
 <br/><br/>
 As usual, let&apos;s start by looking at the necessary deployment descriptors. 
@@ -388,7 +388,7 @@ We discussed both of these files in detail in The <b>greeter example in depth</b
         skip="true"
         title="JAX-RS">
      <description>
-       Before we wrap up our tour of the Brodus example application, 
+       Before we wrap up our tour of the jCAT example application, 
        let&apos;s take a look at how the JAX-RS endpoints are created. Firstly, {<b>JaxRSActivator</b>}}, 
        which extends <b>Application</b> and is annotated with <b>@ApplicationPath</b>, 
        is the Java EE 6 <b>no XML</b> approach to activating JAX-RS.
@@ -682,12 +682,12 @@ We discussed both of these files in detail in The <b>greeter example in depth</b
         skip="true"
         title="Creating your own application ">
      <description>
-      What we didn&apos;t tell you about the <b>Brodus quickstart</b> is that it is generated from a Maven archetype. 
+      What we didn&apos;t tell you about the <b>jCAT quickstart</b> is that it is generated from a Maven archetype. 
       Using this archetype offers you the perfect opportunity to generate your own project.
       <br/><br/>
       In order to perform that, you should select <b>Help&gt;JBoss Central</b> and click the <b>Java EE Web Project</b> wizard.
       <br/>
-      You will get a brand new project with the same functionality as <b>Brodus</b>, 
+      You will get a brand new project with the same functionality as <b>jCAT</b>, 
       but customized with your details.
     </description>
   </item>

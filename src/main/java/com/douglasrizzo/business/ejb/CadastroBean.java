@@ -47,7 +47,7 @@ import com.douglasrizzo.util.exception.LayerException;
 public @Stateless
 class CadastroBean implements CadastroRemote, CadastroLocal
 {
-	@PersistenceContext(unitName = "Brodus")
+	@PersistenceContext(unitName = "jCAT")
 	EntityManager em;
 
 	@Override

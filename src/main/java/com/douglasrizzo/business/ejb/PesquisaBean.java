@@ -52,7 +52,7 @@ import com.douglasrizzo.util.exception.LayerException;
 @Stateless
 public class PesquisaBean implements PesquisaRemote, PesquisaLocal
 {
-	@PersistenceContext(unitName = "Brodus")
+	@PersistenceContext(unitName = "jCAT")
 	EntityManager em;
 
 	@Override

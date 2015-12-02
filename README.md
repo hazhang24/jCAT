@@ -8,17 +8,42 @@ As an additional step, video support was added for the electronic version.
 
 ## Architecture
 
+The application can be separated in two phases:
+
+### Phase 1 (2012)
+
 The application was originally created in 2012 using Java and the J2EE layered architecture. The application connects to a database (originally MySQL) and performs object-relational mapping using Hibernate; business rules are created through Enterprise Java Beans (EJB); and finally, the view layer is done with PrimeFaces, a free and open source implementation of Java Server Faces (JSF). Everything is built using Ant.
 
 The generated web pages are hosted in a web server (originally [Tomcat 7](http://tomcat.apache.org/)) and the EJBs and Data Access Objects (DAO) are hosted in an application server (originally [JBoss 5.0.1](http://jbossas.jboss.org/downloads)).
 
+* Java version: 1.6;
+* Architecture: J2EE layered architecture;
+* Database: MySQL 5;
+* ORM: Hibernate 4;
+* Business rules: EJB;
+* Front-end: PrimeFaces 4;
+* Application server: JBoss 5.0.1;
+* Web server: Tomcat 7;
+* Build: Ant.
+
+### Phase 2 (2015-16)
+
+* Java version: 1.7;
+* Architecture: J2EE layered architecture;
+* Database: MariaDB 10.1;
+* ORM: Hibernate 4;
+* Business rules: EJB;
+* Front-end: PrimeFaces 5.3;
+* Application/web server: Wildfly 9;
+* Build: Maven.
+
 ### More info
 
-You can find a copy of my term paper (in portuguese) [here](https://www.researchgate.net/publication/282914214_Desenvolvimento_de_um_sistema_de_aplicao_de_testes_informatizados_com_contedo_multimdia).
+You can find a copy of my term paper (in portuguese) detailing the architecture I used in 2012 [here](https://www.researchgate.net/publication/282914214_Desenvolvimento_de_um_sistema_de_aplicao_de_testes_informatizados_com_contedo_multimdia).
 
 ### Acknowledgements
 
-This work was my term project for graduation. I did alongside my friend [Bruno de Jesus Destro](https://br.linkedin.com/in/brunodestro), having prof. Fabio Cabrini as a supervisor and profs. Marcos Roberto Macedo and Ocimar Munhoz Alavarse as examining board members.
+This work was originally my term project for graduation. I did alongside my friend [Bruno de Jesus Destro](https://br.linkedin.com/in/brunodestro), having prof. Fabio Cabrini as a supervisor and profs. Marcos Roberto Macedo and Ocimar Munhoz Alavarse as examining board members.
 
 # Instructions to build and run
 
@@ -26,14 +51,13 @@ As of 2015, the project has been built on top of a quickstart example from JBoss
 
 ## System requirements
 
-All you need to build this project is Java 7.0 (Java SDK 1.7) or better, Maven 3.1 or better.
+To build this project, you'll need:
+
+* Java 7.0 (Java SDK 1.7) or better;
+* Maven 3.1 or better;
+* MariaDB 10.0 or better.
 
 The application this project produces is designed to be run on JBoss WildFly.
- 
-## Configure Maven
-
-If you have not yet done so, you must [Configure Maven](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/CONFIGURE_MAVEN.md) before testing the quickstarts.
-
 
 ## Start JBoss WildFly with the Web Profile
 
@@ -42,7 +66,6 @@ If you have not yet done so, you must [Configure Maven](https://github.com/jboss
 
         For Linux:   JBOSS_HOME/bin/standalone.sh
         For Windows: JBOSS_HOME\bin\standalone.bat
-
  
 ## Build and Deploy the Quickstart
 
@@ -65,15 +88,14 @@ The application will be running at the following URL: <http://localhost:8080/jCA
 ## Undeploy the Archive
 
 1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
+2. Open a command line and navigate to the root directory of this application.
 3. When you are finished testing, type this command to undeploy the archive:
 
         mvn wildfly:undeploy
 
-## Run the Quickstart in JBoss Developer Studio or Eclipse
+## Run the Application in JBoss Developer Studio or Eclipse
 
 You can also start the server and deploy the quickstarts from Eclipse using JBoss tools. For more information, see [Use JBoss Developer Studio or Eclipse to Run the Quickstarts](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/USE_JBDS.md) 
-
 
 ## Debug the Application
 
