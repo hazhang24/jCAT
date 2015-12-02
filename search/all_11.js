@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['write',['write',['../classutil_1_1log_1_1LoggerGenerator.html#a696fcd4437715833605a041816be7e20',1,'util.log.LoggerGenerator.write(String event, String message)'],['../classutil_1_1log_1_1LoggerGenerator.html#aa067eb196de23e898e77147d03bc0893',1,'util.log.LoggerGenerator.write(String event, String errorCode, Object object, String message)'],['../classutil_1_1log_1_1LoggerGenerator.html#a20499e7b55072b9fff7fa64c6e0831e6',1,'util.log.LoggerGenerator.write(String event, String message, Throwable exception)']]]
+  ['write',['write',['../classcom_1_1douglasrizzo_1_1util_1_1log_1_1LoggerGenerator.html#ac12e993ce31ada7297b23a5ca32c55e3',1,'com.douglasrizzo.util.log.LoggerGenerator.write(String event, String message)'],['../classcom_1_1douglasrizzo_1_1util_1_1log_1_1LoggerGenerator.html#a9e5a0b77cd5ac97f3e1ac2d56fabebf1',1,'com.douglasrizzo.util.log.LoggerGenerator.write(String event, String errorCode, Object object, String message)'],['../classcom_1_1douglasrizzo_1_1util_1_1log_1_1LoggerGenerator.html#a103d2d1bc8abd1962b16b6587daae594',1,'com.douglasrizzo.util.log.LoggerGenerator.write(String event, String message, Throwable exception)']]]
 ];

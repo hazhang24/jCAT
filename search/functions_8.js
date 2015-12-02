@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['removemsgexception',['removeMsgException',['../classutil_1_1exception_1_1MsgExceptionList.html#a5f17e7ca6351a657c1aa4a398d69d57d',1,'util::exception::MsgExceptionList']]]
+  ['removemsgexception',['removeMsgException',['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1MsgExceptionList.html#ad7702ae9ebe160ed71fa7c8f18f82e75',1,'com::douglasrizzo::util::exception::MsgExceptionList']]]
 ];

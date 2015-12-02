@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['setmsgexception',['setMsgException',['../classutil_1_1exception_1_1MsgExceptionList.html#a6924e052d3fac2d2bc05a2a768f5b6b9',1,'util::exception::MsgExceptionList']]],
-  ['setmsgexceptionlist',['setMsgExceptionList',['../classutil_1_1exception_1_1LayerException.html#a7f8a7010fa93314109fce8b55430a711',1,'util::exception::LayerException']]],
-  ['sysexception',['SysException',['../classutil_1_1exception_1_1SysException.html#a905ddf85b3131cff6e0a817649e4606f',1,'util.exception.SysException.SysException()'],['../classutil_1_1exception_1_1SysException.html#a86352605aed72a6992488497fe3d003e',1,'util.exception.SysException.SysException(MsgException msg)'],['../classutil_1_1exception_1_1SysException.html#a11c266565f79682d9e63f65789f1b269',1,'util.exception.SysException.SysException(MsgExceptionList list)']]]
+  ['setmsgexception',['setMsgException',['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1MsgExceptionList.html#a0a1a5d595120f4ae8b69377f75a706fd',1,'com::douglasrizzo::util::exception::MsgExceptionList']]],
+  ['setmsgexceptionlist',['setMsgExceptionList',['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1LayerException.html#ae3fddb9b43e7540274e3f3a671e79d3a',1,'com::douglasrizzo::util::exception::LayerException']]],
+  ['sysexception',['SysException',['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1SysException.html#aa37947401a2a87a15ac6e3c7f61edca6',1,'com.douglasrizzo.util.exception.SysException.SysException()'],['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1SysException.html#a8c4bca1583fe478ceeddc6a6e31a1190',1,'com.douglasrizzo.util.exception.SysException.SysException(MsgException msg)'],['../classcom_1_1douglasrizzo_1_1util_1_1exception_1_1SysException.html#a6adc8a34d332f9007e6c7740c677d38e',1,'com.douglasrizzo.util.exception.SysException.SysException(MsgExceptionList list)']]]
 ];
