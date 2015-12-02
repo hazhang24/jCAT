@@ -28,6 +28,8 @@ The generated web pages are hosted in a web server (originally [Tomcat 7](http:/
 
 ### Phase 2 (2015-16)
 
+As of 2015, there has been an increased effort in transforming jCAT into a [computerized adaptive test](https://en.wikipedia.org/wiki/Computerized_adaptive_testing), hence the name change. In order to do that, a minor hoverhaul was done in the application architecture, to accomodate the newest trends in web application development and the new versions of old frameworks.
+
 * Java version: 1.7;
 * Architecture: J2EE layered architecture;
 * Database: MariaDB 10.1;
@@ -35,7 +37,7 @@ The generated web pages are hosted in a web server (originally [Tomcat 7](http:/
 * Business rules: EJB;
 * Front-end: PrimeFaces 5.3;
 * Application/web server: Wildfly 9;
-* Build: Maven.
+* Build: Maven 3.
 
 ### More info
 
@@ -78,12 +80,10 @@ _NOTE: The following build command assumes you have configured your Maven user s
         mvn clean package wildfly:deploy
 
 4. This will deploy `target/jCAT.war` to the running instance of the server.
- 
 
 ## Access the application
 
 The application will be running at the following URL: <http://localhost:8080/jCAT/>.
-
 
 ## Undeploy the Archive
 
